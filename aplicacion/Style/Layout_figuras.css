@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+  
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  min-height: 300px !important; /* only for demonstration, should be removed */
+  height: 500px !important;
+  max-height: 1200px !important;
+  background: lightblue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #E39225;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #140F09;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+img{
+  display:block;
+  margin: 10px;
+  border-style: solid;
+}
+
+h1{
+  font-size: 35px;
+  margin: 1px;
+}
+
+header{
+  border-style: dashed;
+  border-color: white;
+}
+
+.Titulo{
+  padding: 5px;
+  text-align: left;
+  font-size: 40px;
+  font: bold;
+  color: blue;
+  border-style: dashed;
+  border-color: red;
+}
+
+.TituloV{
+  padding: 5px;
+  text-align: left;
+  font-size: 40px;
+  color: #FCFF42;
+  border-style: dashed;
+  border-color: blue;
+}
+
+#lista{
+  width: 45%; height: 60%;
+}
+
+.article{
+  background-color: #B80000;
+}
+
+.article2{
+  background-color: #00B891;
+}
